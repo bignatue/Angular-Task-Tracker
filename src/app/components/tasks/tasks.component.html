@@ -1,0 +1,14 @@
+<app-add-task (onAddTask)="addTask($event)"></app-add-task> 
+ 
+<div class="card">
+    <div class="card-body">
+        <h3 class="text-primary">Reminder List</h3>
+        <hr />
+        <app-task-item 
+            *ngFor="let task of tasks" 
+            [task]="task"
+            (onDeleteTask)="deleteTask(task)" 
+            (onToggleReminder)="toggleReminder(task)"
+        ></app-task-item>   
+    </div>
+</div>

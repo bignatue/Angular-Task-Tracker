@@ -1,0 +1,43 @@
+<div *ngIf="showAddTask" class="card mb-3">
+  <div class="card-body">
+      <h2 class="text-primary">Add Reminder</h2>
+        <hr />                 
+        <form (ngSubmit)="onSubmit()">
+          <div class="mb-3">
+            <label for="task" class="form-label">Task</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              name="text"
+              [(ngModel)]="text"
+              id="task" 
+              aria-describedby="task" 
+              placeholder="add task"
+          > 
+          </div>
+          <div class="mb-3">
+            <label for="day" class="form-label">Day & Time</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              name="day"
+              [(ngModel)]="day"
+              id="day" 
+              aria-describedby="day" 
+              placeholder="add day & time"> 
+          </div>
+          <div class="mb-3 form-check">
+            <input 
+              type="checkbox" 
+              class="form-check-input" 
+              name="reminder"
+              [(ngModel)]="reminder"
+              id="reminder">
+            <label class="form-check-label" for="reminder">Reminder</label>
+          </div>
+          <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+  </div>
+</div>
