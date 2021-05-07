@@ -1,4 +1,15 @@
-# CrashCourseTraversy
+# Angular Crash Course
+### Scope
+- Component structure
+- Creating an event & event emitter output
+- Mock Tasks & Task Interface
+- Looping with ngFor
+- JSON-Server Setup
+- Angular HTTP Client
+- Fetching Data
+- Router, Module & ngModel 
+
+![Design preview for Angular Crash Course](./preview.gif)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.12.
 

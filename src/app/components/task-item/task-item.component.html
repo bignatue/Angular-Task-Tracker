@@ -1,0 +1,17 @@
+<ul class="list-group p-0">
+    <li 
+        [ngClass]="{reminder: task.reminder}"
+        (dblclick)="onToggle(task)"
+        class="list-group-item rounded-0 d-flex align-items-center justify-content-between align-items-start p-2 mb-2">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">{{ task.text }}</div>
+            {{task.day}}
+        </div>
+        <h3 
+            (click)="onDelete(task)"
+            class="text-danger font-weight-bold"
+        >
+            <i class="bi bi-x"></i>
+        </h3>
+    </li>
+</ul>
